@@ -1,0 +1,502 @@
+{
+  "config": "{\"version\":\"5.50\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.48\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":true,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"filterPaneHiddenInEditMode\":false},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 1,
+  "publicCustomVisuals": [
+    "ChicletSlicer1448559807354",
+    "ratingsvisual001"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "account_tree_FILL0_wght400_GRA30083892428309733.png",
+            "path": "account_tree_FILL0_wght400_GRA30083892428309733.png",
+            "type": 100
+          },
+          {
+            "name": "bar_chart_FILL0_wght400_GRAD0_8078754063675182.png",
+            "path": "bar_chart_FILL0_wght400_GRAD0_8078754063675182.png",
+            "type": 100
+          },
+          {
+            "name": "hotel_class_FILL0_wght400_GRAD6827910608173731.png",
+            "path": "hotel_class_FILL0_wght400_GRAD6827910608173731.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU08",
+            "path": "BaseThemes/CY23SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"relationships\":[{\"source\":\"47451406f0cfc167d081\",\"target\":\"b6c73a59a91ab6c70f2e\",\"type\":3}],\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"198L\"}}}}}]}}",
+      "displayName": "Contract Report Card",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"02428654c095b0c9e5a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":260,\"y\":10,\"z\":13000,\"width\":68,\"height\":74,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"account_tree_FILL0_wght400_GRA30083892428309733.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSectionfb6ae30b26e4fb96af9c'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Measure Decomposition Tree'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 74.00,
+          "width": 68.00,
+          "x": 260.00,
+          "y": 10.00,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"20e0d68e7d3bd492e8da\",\"layouts\":[{\"id\":0,\"position\":{\"x\":176,\"y\":12,\"z\":12000,\"width\":68,\"height\":74,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"account_tree_FILL0_wght400_GRA30083892428309733.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSectionf009efcaa79574aa70c6'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Parent Organization Decomposition Tree'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 74.00,
+          "width": 68.00,
+          "x": 176.00,
+          "y": 12.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"39ee1f6bdd9e9b939af3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":930,\"y\":0,\"z\":4000,\"width\":182,\"height\":94,\"tabOrder\":2000}},{\"id\":1,\"position\":{\"x\":0,\"y\":339,\"z\":1,\"width\":161,\"height\":120}}],\"singleVisual\":{\"visualType\":\"ratingsvisual001\",\"projections\":{\"measure\":[{\"queryRef\":\"CountNonNull(stars_summary_results_2024.part_c_star)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part C Star Rating\"}},\"Function\":1},\"Name\":\"CountNonNull(stars_summary_results_2024.part_c_star)\",\"NativeReferenceName\":\"Part C Star Rating1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part C Star Rating\"}},\"Function\":1}}}]},\"columnProperties\":{\"CountNonNull(stars_summary_results_2024.part_c_star)\":{\"displayName\":\"Part C Star Rating\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"percentageLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"totalStarsLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 94.00,
+          "width": 182.00,
+          "x": 930.00,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"47451406f0cfc167d081\",\"layouts\":[{\"id\":0,\"position\":{\"x\":753.2873563218391,\"y\":187.0746745832382,\"z\":7000,\"width\":526.3034178275101,\"height\":532.539240313618,\"tabOrder\":5000}},{\"id\":1,\"position\":{\"x\":1,\"y\":115,\"z\":3,\"width\":323,\"height\":104}}],\"singleVisual\":{\"visualType\":\"ChicletSlicer1448559807354\",\"projections\":{\"Category\":[{\"queryRef\":\"stars_summary_results_2024.Contract Name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Contract Name\"},\"Name\":\"stars_summary_results_2024.Contract Name\",\"NativeReferenceName\":\"Contract Name\"}]},\"syncGroup\":{\"groupName\":\"Contract Name\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"forcedSelection\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"multiselect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"columns\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Contract Name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'EMPHESYS INSURANCE COMPANY'\"}}]]}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"rows\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"500D\"}}},\"borderStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Rounded'\"}}},\"selectedColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Contract Name'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 532.54,
+          "width": 526.30,
+          "x": 753.29,
+          "y": 187.07,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"4b8db4c2499c60db2b9f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":150.95315024232633,\"z\":2000,\"width\":752.6978998384491,\"height\":568.6591276252019,\"tabOrder\":0}},{\"id\":1,\"position\":{\"x\":0,\"y\":459,\"z\":7,\"width\":324,\"height\":796}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"star_measures_results_2024.Measure Domain\"},{\"queryRef\":\"star_measures_results_2024.measure\"},{\"queryRef\":\"star_measures_results_2024.Measure Start Date\"},{\"queryRef\":\"star_measures_results_2024.Measure End Date\"},{\"queryRef\":\"Sum(star_measures_results_2024.measure_star)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"star_measures_results_2024\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Measure\"},\"Name\":\"star_measures_results_2024.measure\",\"NativeReferenceName\":\"Measure\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Measure Star\"}},\"Function\":1},\"Name\":\"Sum(star_measures_results_2024.measure_star)\",\"NativeReferenceName\":\"Measure Star Rating\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Measure Start Date\"},\"Name\":\"star_measures_results_2024.Measure Start Date\",\"NativeReferenceName\":\"Measure Start Date\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Measure End Date\"},\"Name\":\"star_measures_results_2024.Measure End Date\",\"NativeReferenceName\":\"Measure End Date\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Measure Domain\"},\"Name\":\"star_measures_results_2024.Measure Domain\",\"NativeReferenceName\":\"Measure Domain\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Measure Domain\"}}}]},\"columnProperties\":{\"Sum(star_measures_results_2024.measure_star)\":{\"displayName\":\"Measure Star Rating\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"199.8530506970216D\"}}}},\"selector\":{\"metadata\":\"star_measures_results_2024.measure\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"158.8043076948484D\"}}}},\"selector\":{\"metadata\":\"star_measures_results_2024.Measure Domain\"}}],\"total\":[{\"properties\":{\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnFormatting\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Sum(star_measures_results_2024.measure_star)\"}}],\"grid\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 568.66,
+          "width": 752.70,
+          "x": 0.00,
+          "y": 150.95,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"6944689081b1a4929623\",\"layouts\":[{\"id\":0,\"position\":{\"x\":6,\"y\":10,\"z\":11000,\"width\":68,\"height\":68,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"hotel_class_FILL0_wght400_GRAD6827910608173731.png\"}}}}}]},\"vcObjects\":{\"general\":[{\"properties\":{\"altText\":{\"expr\":{\"Literal\":{\"Value\":\"'Star Report Card'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 68.00,
+          "width": 68.00,
+          "x": 6.00,
+          "y": 10.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"6aa648693d01f78ced6f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":93.05331179321486,\"z\":9000,\"width\":136.47819063004846,\"height\":57.89983844911147,\"tabOrder\":7000}},{\"id\":1,\"position\":{\"x\":0,\"y\":219,\"z\":5,\"width\":163,\"height\":120}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(stars_summary_results_2024.Contract ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Contract ID\"}},\"Function\":3},\"Name\":\"Min(stars_summary_results_2024.Contract ID)\",\"NativeReferenceName\":\"First Contract ID\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Contract ID'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 57.90,
+          "width": 136.48,
+          "x": 0.00,
+          "y": 93.05,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"7399c54a470ac339abe1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":346,\"y\":12,\"z\":10000,\"width\":388,\"height\":64,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"STAR Report Card\",\"textStyle\":{\"fontSize\":\"28pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 64.00,
+          "width": 388.00,
+          "x": 346.00,
+          "y": 12.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"85a658b0a3bc171a9d12\",\"layouts\":[{\"id\":0,\"position\":{\"x\":332,\"y\":0,\"z\":1000,\"width\":420,\"height\":94,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 94.00,
+          "width": 420.00,
+          "x": 332.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"ad43ab51764f521dd59a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1112,\"y\":0,\"z\":5000,\"width\":168,\"height\":94,\"tabOrder\":3000}},{\"id\":1,\"position\":{\"x\":161,\"y\":339,\"z\":4,\"width\":163,\"height\":120}}],\"singleVisual\":{\"visualType\":\"ratingsvisual001\",\"projections\":{\"measure\":[{\"queryRef\":\"CountNonNull(stars_summary_results_2024.part_d_star)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part D Star Rating\"}},\"Function\":1},\"Name\":\"CountNonNull(stars_summary_results_2024.part_d_star)\",\"NativeReferenceName\":\"Part D Star Rating1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part D Star Rating\"}},\"Function\":1}}}]},\"columnProperties\":{\"CountNonNull(stars_summary_results_2024.part_d_star)\":{\"displayName\":\"Part D Star Rating\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"percentageLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"totalStarsLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 94.00,
+          "width": 168.00,
+          "x": 1112.00,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"b4b1fc2a18870538e078\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":332,\"height\":94,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 94.00,
+          "width": 332.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b6c73a59a91ab6c70f2e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":753.2873563218391,\"y\":93.5373372916191,\"z\":3000,\"width\":526.3034178275101,\"height\":93.5373372916191,\"tabOrder\":1000}},{\"id\":1,\"position\":{\"x\":0,\"y\":0,\"z\":2,\"width\":324,\"height\":120}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"stars_summary_results_2024.Parent Organization\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Parent Organization\"},\"Name\":\"stars_summary_results_2024.Parent Organization\",\"NativeReferenceName\":\"Parent Organization\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"stars_summary_results_2024.Parent Organization\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"syncGroup\":{\"groupName\":\"Parent Organization\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Parent Organization\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Humana Inc.'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Contract Name'\"}}},\"showRestatement\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"pendingChangesIcon\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"padding\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Parent Organization'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 93.54,
+          "width": 526.30,
+          "x": 753.29,
+          "y": 93.54,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"bc963b921ed27df327cf\",\"layouts\":[{\"id\":0,\"position\":{\"x\":136.47819063004846,\"y\":93.05331179321486,\"z\":8000,\"width\":617.2536348949919,\"height\":57.89983844911147,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"stars_summary_results_2024.part_c_comment\"},{\"queryRef\":\"stars_summary_results_2024.part_d_comment\"},{\"queryRef\":\"stars_summary_results_2024.overall_comment\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part C Reporting Comment\"},\"Name\":\"stars_summary_results_2024.part_c_comment\",\"NativeReferenceName\":\"Part C \"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part D Reporting Comment\"},\"Name\":\"stars_summary_results_2024.part_d_comment\",\"NativeReferenceName\":\"Part D \"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Overall Star Reporting Comment\"},\"Name\":\"stars_summary_results_2024.overall_comment\",\"NativeReferenceName\":\"Overall Star \"}]},\"columnProperties\":{\"stars_summary_results_2024.part_c_comment\":{\"displayName\":\"Part C \"},\"stars_summary_results_2024.part_d_comment\":{\"displayName\":\"Part D \"},\"stars_summary_results_2024.overall_comment\":{\"displayName\":\"Overall Star \"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataLabels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"categoryLabels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 57.90,
+          "width": 617.25,
+          "x": 136.48,
+          "y": 93.05,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"d3b946ff74b93c9d0d91\",\"layouts\":[{\"id\":0,\"position\":{\"x\":752,\"y\":0,\"z\":6000,\"width\":178,\"height\":94,\"tabOrder\":4000}},{\"id\":1,\"position\":{\"x\":161,\"y\":219,\"z\":6,\"width\":163,\"height\":120}}],\"singleVisual\":{\"visualType\":\"ratingsvisual001\",\"projections\":{\"measure\":[{\"queryRef\":\"CountNonNull(stars_summary_results_2024.overall_star)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Overall Star Rating\"}},\"Function\":1},\"Name\":\"CountNonNull(stars_summary_results_2024.overall_star)\",\"NativeReferenceName\":\"Overall Star Rating1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Overall Star Rating\"}},\"Function\":1}}}]},\"columnProperties\":{\"CountNonNull(stars_summary_results_2024.overall_star)\":{\"displayName\":\"Overall Star Rating\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"percentageLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'bottom'\"}}},\"totalStarsLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 94.00,
+          "width": 178.00,
+          "x": 752.00,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"ddc347f50c7a390a2ce4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":84,\"y\":10,\"z\":14000,\"width\":68,\"height\":68,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"bar_chart_FILL0_wght400_GRAD0_8078754063675182.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection39481a5d6dd4f6fd7a74'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Top/Bottom Performing Contracts by Organization'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 68.00,
+          "width": 68.00,
+          "x": 84.00,
+          "y": 10.00,
+          "z": 14000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Parent Org Avg Stars",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection39481a5d6dd4f6fd7a74",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"04151e70db3d1596039b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":345.7142857142857,\"y\":4.285714285714286,\"z\":9000,\"width\":388.5714285714286,\"height\":85.71428571428572,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Top/Bottom Performing Contracts by Organization\",\"textStyle\":{\"fontSize\":\"18pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 85.71,
+          "width": 388.57,
+          "x": 345.71,
+          "y": 4.29,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"0caece331348e8676301\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":396.53758542141236,\"z\":2000,\"width\":1280,\"height\":323.6446469248292,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"stars_summary_results_2024.Contract Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Avg(stars_summary_results_2024.Overall Star Rating)\"},{\"queryRef\":\"Avg(stars_summary_results_2024.Part C Star Rating)\"},{\"queryRef\":\"Avg(stars_summary_results_2024.Part D Star Rating)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Contract Name\"},\"Name\":\"stars_summary_results_2024.Contract Name\",\"NativeReferenceName\":\"Contract Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Overall Star Rating\"}},\"Function\":1},\"Name\":\"Avg(stars_summary_results_2024.Overall Star Rating)\",\"NativeReferenceName\":\"Overall\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part C Star Rating\"}},\"Function\":1},\"Name\":\"Avg(stars_summary_results_2024.Part C Star Rating)\",\"NativeReferenceName\":\"Part C\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part D Star Rating\"}},\"Function\":1},\"Name\":\"Avg(stars_summary_results_2024.Part D Star Rating)\",\"NativeReferenceName\":\"Part D\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Overall Star Rating\"}},\"Function\":1}}}]},\"columnProperties\":{\"CountNonNull(stars_summary_results_2024.Overall Star Rating)\":{\"displayName\":\"Overall\"},\"CountNonNull(stars_summary_results_2024.Part C Star Rating)\":{\"displayName\":\"Part C\"},\"CountNonNull(stars_summary_results_2024.Part D Star Rating)\":{\"displayName\":\"Part D\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Bottom 5 Overall Performing Contracts  By Parent Org'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"stars_summary_results_2024\"}},\"Property\":\"Contract Name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Contract Name\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Overall Star Rating\"}},\"Function\":1}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Contract Name\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 323.64,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 396.54,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"0fd7d83bc00047b064c5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":6,\"y\":10,\"z\":5000,\"width\":68,\"height\":68,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"hotel_class_FILL0_wght400_GRAD6827910608173731.png\"}}}}}]},\"vcObjects\":{\"general\":[{\"properties\":{\"altText\":{\"expr\":{\"Literal\":{\"Value\":\"'Star Report Card'\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Star Report Card'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 68.00,
+          "width": 68.00,
+          "x": 6.00,
+          "y": 10.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"55430c664201b1dd70df\",\"layouts\":[{\"id\":0,\"position\":{\"x\":754.1989369779803,\"y\":0,\"z\":0,\"width\":525.8010630220198,\"height\":93.30296127562643,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"stars_summary_results_2024.Parent Organization\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Parent Organization\"},\"Name\":\"stars_summary_results_2024.Parent Organization\",\"NativeReferenceName\":\"Parent Organization\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"stars_summary_results_2024.Parent Organization\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"syncGroup\":{\"groupName\":\"Parent Organization\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Parent Organization\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Humana Inc.'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Contract Name'\"}}},\"showRestatement\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"pendingChangesIcon\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Parent Organization'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 93.30,
+          "width": 525.80,
+          "x": 754.20,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"587639090e3b85d84055\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":3000,\"width\":332,\"height\":94,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 94.00,
+          "width": 332.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"6c92f7ddb06cb2918608\",\"layouts\":[{\"id\":0,\"position\":{\"x\":84,\"y\":10,\"z\":8000,\"width\":68,\"height\":68,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"bar_chart_FILL0_wght400_GRAD0_8078754063675182.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection39481a5d6dd4f6fd7a74'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Top/Bottom Performing Contracts by Organization'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 68.00,
+          "width": 68.00,
+          "x": 84.00,
+          "y": 10.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"8b3a95ea1344b4e960b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":176,\"y\":12,\"z\":6000,\"width\":68,\"height\":74,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"account_tree_FILL0_wght400_GRA30083892428309733.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSectionf009efcaa79574aa70c6'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Parent Organization Decomposition Tree'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 74.00,
+          "width": 68.00,
+          "x": 176.00,
+          "y": 12.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"9940072d377ae664b7ca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":93.30296127562643,\"z\":1000,\"width\":1280,\"height\":303.2346241457859,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"stars_summary_results_2024.Contract Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Avg(stars_summary_results_2024.Overall Star Rating)\"},{\"queryRef\":\"Avg(stars_summary_results_2024.Part C Star Rating)\"},{\"queryRef\":\"Avg(stars_summary_results_2024.Part D Star Rating)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Contract Name\"},\"Name\":\"stars_summary_results_2024.Contract Name\",\"NativeReferenceName\":\"Contract Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Overall Star Rating\"}},\"Function\":1},\"Name\":\"Avg(stars_summary_results_2024.Overall Star Rating)\",\"NativeReferenceName\":\"Overall\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part C Star Rating\"}},\"Function\":1},\"Name\":\"Avg(stars_summary_results_2024.Part C Star Rating)\",\"NativeReferenceName\":\"Part C\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part D Star Rating\"}},\"Function\":1},\"Name\":\"Avg(stars_summary_results_2024.Part D Star Rating)\",\"NativeReferenceName\":\"Part D\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Overall Star Rating\"}},\"Function\":1}}}]},\"columnProperties\":{\"CountNonNull(stars_summary_results_2024.Overall Star Rating)\":{\"displayName\":\"Overall\"},\"CountNonNull(stars_summary_results_2024.Part C Star Rating)\":{\"displayName\":\"Part C\"},\"CountNonNull(stars_summary_results_2024.Part D Star Rating)\":{\"displayName\":\"Part D\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 5 Overall Performing Contracts By Parent Org'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"stars_summary_results_2024\"}},\"Property\":\"Contract Name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Contract Name\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Overall Star Rating\"}},\"Function\":1}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Contract Name\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 303.23,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 93.30,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"e846118521152bd1bad1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":331.42857142857144,\"y\":0,\"z\":4000,\"width\":422.8571428571429,\"height\":94.28571428571429,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 94.29,
+          "width": 422.86,
+          "x": 331.43,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"f20d57acd523a0d7b019\",\"layouts\":[{\"id\":0,\"position\":{\"x\":260,\"y\":10,\"z\":7000,\"width\":68,\"height\":74,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"account_tree_FILL0_wght400_GRA30083892428309733.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSectionfb6ae30b26e4fb96af9c'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Measure Decomposition Tree'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 74.00,
+          "width": 68.00,
+          "x": 260.00,
+          "y": 10.00,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Parent Org Decomp Tree",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionf009efcaa79574aa70c6",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"10bb0a219b9cb62623d0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":6,\"y\":10,\"z\":7000,\"width\":68,\"height\":68,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"hotel_class_FILL0_wght400_GRAD6827910608173731.png\"}}}}}]},\"vcObjects\":{\"general\":[{\"properties\":{\"altText\":{\"expr\":{\"Literal\":{\"Value\":\"'Star Report Card'\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Star Report Card'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 68.00,
+          "width": 68.00,
+          "x": 6.00,
+          "y": 10.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"18cae68fe6812b2db733\",\"layouts\":[{\"id\":0,\"position\":{\"x\":176,\"y\":12,\"z\":8000,\"width\":68,\"height\":74,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"account_tree_FILL0_wght400_GRA30083892428309733.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSectionf009efcaa79574aa70c6'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Parent Organization Decomposition Tree'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 74.00,
+          "width": 68.00,
+          "x": 176.00,
+          "y": 12.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"1e44f7f090c384bd983c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":930,\"y\":0,\"z\":3000,\"width\":182,\"height\":94,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"ratingsvisual001\",\"projections\":{\"measure\":[{\"queryRef\":\"CountNonNull(stars_summary_results_2024.part_c_star)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part C Star Rating\"}},\"Function\":1},\"Name\":\"CountNonNull(stars_summary_results_2024.part_c_star)\",\"NativeReferenceName\":\"Part C Star Rating1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part C Star Rating\"}},\"Function\":1}}}]},\"columnProperties\":{\"CountNonNull(stars_summary_results_2024.part_c_star)\":{\"displayName\":\"Part C Star Rating\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"percentageLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"totalStarsLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 94.00,
+          "width": 182.00,
+          "x": 930.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"53d2accac6123ed43141\",\"layouts\":[{\"id\":0,\"position\":{\"x\":752,\"y\":0,\"z\":5000,\"width\":178,\"height\":94,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"ratingsvisual001\",\"projections\":{\"measure\":[{\"queryRef\":\"CountNonNull(stars_summary_results_2024.overall_star)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Overall Star Rating\"}},\"Function\":1},\"Name\":\"CountNonNull(stars_summary_results_2024.overall_star)\",\"NativeReferenceName\":\"Overall Star Rating1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Overall Star Rating\"}},\"Function\":1}}}]},\"columnProperties\":{\"CountNonNull(stars_summary_results_2024.overall_star)\":{\"displayName\":\"Overall Star Rating\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"percentageLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'bottom'\"}}},\"totalStarsLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 94.00,
+          "width": 178.00,
+          "x": 752.00,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"642f7d54a4e0898e026a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":345.7142857142857,\"y\":4.285714285714286,\"z\":6000,\"width\":388.5714285714286,\"height\":85.71428571428572,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Parent Organization \",\"textStyle\":{\"fontSize\":\"20pt\"}}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"Decomp. Tree\",\"textStyle\":{\"fontSize\":\"20pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 85.71,
+          "width": 388.57,
+          "x": 345.71,
+          "y": 4.29,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"72c6237c6c35a7e895a9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":93.30296127562643,\"z\":0,\"width\":1280,\"height\":626.8792710706151,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"decompositionTreeVisual\",\"projections\":{\"ExplainBy\":[{\"queryRef\":\"stars_summary_results_2024.SNP Flag\",\"active\":true},{\"queryRef\":\"stars_summary_results_2024.Parent Organization\",\"active\":true},{\"queryRef\":\"stars_summary_results_2024.Marketing Name\",\"active\":true},{\"queryRef\":\"stars_summary_results_2024.Contract Name\",\"active\":true},{\"queryRef\":\"stars_summary_results_2024.Contract ID\",\"active\":true}],\"Analyze\":[{\"queryRef\":\"Avg(stars_summary_results_2024.Overall Star Rating)\"}],\"Tooltips\":[{\"queryRef\":\"Avg(stars_summary_results_2024.Overall Star Rating)\"},{\"queryRef\":\"CountNonNull(stars_summary_results_2024.Part C Star Rating)\"},{\"queryRef\":\"CountNonNull(stars_summary_results_2024.Part D Star Rating)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Parent Organization\"},\"Name\":\"stars_summary_results_2024.Parent Organization\",\"NativeReferenceName\":\"Parent Organization\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Contract Name\"},\"Name\":\"stars_summary_results_2024.Contract Name\",\"NativeReferenceName\":\"Contract Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Marketing Name\"},\"Name\":\"stars_summary_results_2024.Marketing Name\",\"NativeReferenceName\":\"Marketing Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part C Star Rating\"}},\"Function\":1},\"Name\":\"CountNonNull(stars_summary_results_2024.Part C Star Rating)\",\"NativeReferenceName\":\"Average of Part C Star Rating\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part D Star Rating\"}},\"Function\":1},\"Name\":\"CountNonNull(stars_summary_results_2024.Part D Star Rating)\",\"NativeReferenceName\":\"Average of Part D Star Rating\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SNP Flag\"},\"Name\":\"stars_summary_results_2024.SNP Flag\",\"NativeReferenceName\":\"SNP Flag\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Contract ID\"},\"Name\":\"stars_summary_results_2024.Contract ID\",\"NativeReferenceName\":\"Contract ID\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Overall Star Rating\"}},\"Function\":1},\"Name\":\"Avg(stars_summary_results_2024.Overall Star Rating)\",\"NativeReferenceName\":\"Average of Overall Star Rating1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Overall Star Rating\"}},\"Function\":1}}}]},\"expansionStates\":[{\"roles\":[\"ExplainBy\"],\"levels\":[{\"queryRefs\":[\"stars_summary_results_2024.SNP Flag\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"stars_summary_results_2024\"}},\"Property\":\"SNP Flag\"}}],\"isPinned\":true},{\"queryRefs\":[\"stars_summary_results_2024.Parent Organization\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"stars_summary_results_2024\"}},\"Property\":\"Parent Organization\"}}],\"isPinned\":true},{\"queryRefs\":[\"stars_summary_results_2024.Marketing Name\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"stars_summary_results_2024\"}},\"Property\":\"Marketing Name\"}}],\"isPinned\":true},{\"queryRefs\":[\"stars_summary_results_2024.Contract Name\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"stars_summary_results_2024\"}},\"Property\":\"Contract Name\"}}],\"isPinned\":true},{\"queryRefs\":[\"stars_summary_results_2024.Contract ID\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"stars_summary_results_2024\"}},\"Property\":\"Contract ID\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"false\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Centene Corporation'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Wellcare'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'AMERICAN PROGRESSIVE LIFE & HLTH INS COMPANY OF NY'\"}}],\"isToggled\":true}]}]}]}]}}],\"columnProperties\":{\"CountNonNull(stars_summary_results_2024.Overall Star Rating)\":{\"displayName\":\"Overall\"},\"CountNonNull(stars_summary_results_2024.Part C Star Rating)\":{\"displayName\":\"Part C\"},\"CountNonNull(stars_summary_results_2024.Part D Star Rating)\":{\"displayName\":\"Part D\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"tree\":[{\"properties\":{\"effectiveBarsPerLevel\":{\"expr\":{\"Literal\":{\"Value\":\"8L\"}}}}}],\"dataBars\":[{\"properties\":{\"dataBarBackgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 5 Overall Performing Contracts By Parent Org'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filterf100e4673b470f9a6468\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"stars_summary_results_2024\"}},\"Property\":\"Contract Name\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 626.88,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 93.30,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"81d427843462a9c08328\",\"layouts\":[{\"id\":0,\"position\":{\"x\":332,\"y\":0,\"z\":2000,\"width\":420,\"height\":94,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 94.00,
+          "width": 420.00,
+          "x": 332.00,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"ac013840c202c3e1d4c2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":332,\"height\":94,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 94.00,
+          "width": 332.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"af556ee41a133b504bdc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":260,\"y\":10,\"z\":9000,\"width\":68,\"height\":74,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"account_tree_FILL0_wght400_GRA30083892428309733.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSectionfb6ae30b26e4fb96af9c'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Measure Decomposition Tree'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 74.00,
+          "width": 68.00,
+          "x": 260.00,
+          "y": 10.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"d7bbbf9f0e52ee029e0e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1112,\"y\":0,\"z\":4000,\"width\":168,\"height\":94,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"ratingsvisual001\",\"projections\":{\"measure\":[{\"queryRef\":\"CountNonNull(stars_summary_results_2024.part_d_star)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part D Star Rating\"}},\"Function\":1},\"Name\":\"CountNonNull(stars_summary_results_2024.part_d_star)\",\"NativeReferenceName\":\"Part D Star Rating1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part D Star Rating\"}},\"Function\":1}}}]},\"columnProperties\":{\"CountNonNull(stars_summary_results_2024.part_d_star)\":{\"displayName\":\"Part D Star Rating\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"percentageLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"totalStarsLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 94.00,
+          "width": 168.00,
+          "x": 1112.00,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"f5956c7b09620b8cbc0a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":84,\"y\":10,\"z\":10000,\"width\":68,\"height\":68,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"bar_chart_FILL0_wght400_GRAD0_8078754063675182.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection39481a5d6dd4f6fd7a74'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Top/Bottom Performing Contracts by Organization'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 68.00,
+          "width": 68.00,
+          "x": 84.00,
+          "y": 10.00,
+          "z": 10000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Measure Decomp Tree",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionfb6ae30b26e4fb96af9c",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0040ec40d70d23e6874e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":6,\"y\":10,\"z\":4000,\"width\":68,\"height\":68,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"hotel_class_FILL0_wght400_GRAD6827910608173731.png\"}}}}}]},\"vcObjects\":{\"general\":[{\"properties\":{\"altText\":{\"expr\":{\"Literal\":{\"Value\":\"'Star Report Card'\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Star Report Card'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 68.00,
+          "width": 68.00,
+          "x": 6.00,
+          "y": 10.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"46bf400a7dab0bce8a24\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":93.30296127562643,\"z\":0,\"width\":1280,\"height\":626.8792710706151,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"decompositionTreeVisual\",\"projections\":{\"ExplainBy\":[{\"queryRef\":\"stars_summary_results_2024.SNP Flag\",\"active\":true},{\"queryRef\":\"stars_summary_results_2024.Contract Name\",\"active\":true},{\"queryRef\":\"star_measures_results_2024.Measure Domain\",\"active\":true},{\"queryRef\":\"star_measures_results_2024.Measure\",\"active\":true}],\"Tooltips\":[{\"queryRef\":\"Avg(stars_summary_results_2024.Overall Star Rating)\"},{\"queryRef\":\"CountNonNull(stars_summary_results_2024.Part C Star Rating)\"},{\"queryRef\":\"CountNonNull(stars_summary_results_2024.Part D Star Rating)\"}],\"Analyze\":[{\"queryRef\":\"Sum(star_measures_results_2024.Measure Star)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0},{\"Name\":\"s1\",\"Entity\":\"star_measures_results_2024\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Contract Name\"},\"Name\":\"stars_summary_results_2024.Contract Name\",\"NativeReferenceName\":\"Contract Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part C Star Rating\"}},\"Function\":1},\"Name\":\"CountNonNull(stars_summary_results_2024.Part C Star Rating)\",\"NativeReferenceName\":\"Average of Part C Star Rating\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Part D Star Rating\"}},\"Function\":1},\"Name\":\"CountNonNull(stars_summary_results_2024.Part D Star Rating)\",\"NativeReferenceName\":\"Average of Part D Star Rating\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SNP Flag\"},\"Name\":\"stars_summary_results_2024.SNP Flag\",\"NativeReferenceName\":\"SNP Flag\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Overall Star Rating\"}},\"Function\":1},\"Name\":\"Avg(stars_summary_results_2024.Overall Star Rating)\",\"NativeReferenceName\":\"Average of Overall Star Rating\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"Measure Domain\"},\"Name\":\"star_measures_results_2024.Measure Domain\",\"NativeReferenceName\":\"Measure Domain\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"Measure\"},\"Name\":\"star_measures_results_2024.Measure\",\"NativeReferenceName\":\"Measure\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"Measure Star\"}},\"Function\":1},\"Name\":\"Sum(star_measures_results_2024.Measure Star)\",\"NativeReferenceName\":\"Average of Measure Star\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"Measure Star\"}},\"Function\":1}}}]},\"expansionStates\":[{\"roles\":[\"ExplainBy\"],\"levels\":[{\"queryRefs\":[\"stars_summary_results_2024.SNP Flag\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"stars_summary_results_2024\"}},\"Property\":\"SNP Flag\"}}],\"isPinned\":true},{\"queryRefs\":[\"stars_summary_results_2024.Contract Name\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"stars_summary_results_2024\"}},\"Property\":\"Contract Name\"}}],\"isPinned\":true},{\"queryRefs\":[\"star_measures_results_2024.Measure Domain\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"star_measures_results_2024\"}},\"Property\":\"Measure Domain\"}}],\"isPinned\":true},{\"queryRefs\":[\"star_measures_results_2024.Measure\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"true\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'HUMANA WI HEALTH ORGANIZATION INSURANCE CORP'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'HD3: Member Experience with Health Plan'\"}}],\"isToggled\":true}]}]}]}}],\"columnProperties\":{\"CountNonNull(stars_summary_results_2024.Part C Star Rating)\":{\"displayName\":\"Part C\"},\"CountNonNull(stars_summary_results_2024.Part D Star Rating)\":{\"displayName\":\"Part D\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"tree\":[{\"properties\":{\"effectiveBarsPerLevel\":{\"expr\":{\"Literal\":{\"Value\":\"8L\"}}}}}],\"dataBars\":[{\"properties\":{\"dataBarBackgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 5 Overall Performing Contracts By Parent Org'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filterf100e4673b470f9a6468\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"stars_summary_results_2024\"}},\"Property\":\"Contract Name\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 626.88,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 93.30,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"5cc4369174559cb80083\",\"layouts\":[{\"id\":0,\"position\":{\"x\":84,\"y\":10,\"z\":7000,\"width\":68,\"height\":68,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"bar_chart_FILL0_wght400_GRAD0_8078754063675182.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection39481a5d6dd4f6fd7a74'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Top/Bottom Performing Contracts by Organization'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 68.00,
+          "width": 68.00,
+          "x": 84.00,
+          "y": 10.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"77e278b43e9e3258dea8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":260,\"y\":10,\"z\":6000,\"width\":68,\"height\":74,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"account_tree_FILL0_wght400_GRA30083892428309733.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSectionfb6ae30b26e4fb96af9c'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Measure Decomposition Tree'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 74.00,
+          "width": 68.00,
+          "x": 260.00,
+          "y": 10.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"840942f513447bc556b6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":176,\"y\":12,\"z\":5000,\"width\":68,\"height\":74,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"account_tree_FILL0_wght400_GRA30083892428309733.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSectionf009efcaa79574aa70c6'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Parent Organization Decomposition Tree'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 74.00,
+          "width": 68.00,
+          "x": 176.00,
+          "y": 12.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"a1d4bd406092c931220e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":331.42857142857144,\"y\":0,\"z\":3000,\"width\":422.8571428571429,\"height\":94.28571428571429,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 94.29,
+          "width": 422.86,
+          "x": 331.43,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"b6bdb14239a6d0c2ed3b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":754.1989369779803,\"y\":0,\"z\":1000,\"width\":525.8010630220198,\"height\":93.30296127562643,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"stars_summary_results_2024.Parent Organization\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Parent Organization\"},\"Name\":\"stars_summary_results_2024.Parent Organization\",\"NativeReferenceName\":\"Parent Organization\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"stars_summary_results_2024.Parent Organization\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"syncGroup\":{\"groupName\":\"Parent Organization\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Parent Organization\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Humana Inc.'\"}}]]}}}]}},\"selfFilter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stars_summary_results_2024\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Contains\":{\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Parent Organization\"}},\"Right\":{\"Literal\":{\"Value\":\"'Humana'\"}}}},\"Annotations\":{\"PowerBI.MParameterBehavior\":1}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Contract Name'\"}}},\"showRestatement\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"pendingChangesIcon\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Parent Organization'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 93.30,
+          "width": 525.80,
+          "x": 754.20,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"cb30140959ce4516aa12\",\"layouts\":[{\"id\":0,\"position\":{\"x\":345.7142857142857,\"y\":4.285714285714286,\"z\":8000,\"width\":388.5714285714286,\"height\":85.71428571428572,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Measure \",\"textStyle\":{\"fontSize\":\"20pt\"}}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"Decomp. Tree\",\"textStyle\":{\"fontSize\":\"20pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 85.71,
+          "width": 388.57,
+          "x": 345.71,
+          "y": 4.29,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"cbde6c29991177b29ed6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":2000,\"width\":332,\"height\":94,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 94.00,
+          "width": 332.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

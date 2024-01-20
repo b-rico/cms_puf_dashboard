@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../2024 CMS Star Ratings.Dataset"
+    },
+    "byConnection": null
+  }
+}
